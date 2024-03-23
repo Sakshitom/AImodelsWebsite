@@ -81,7 +81,7 @@ const ModelCardsContainer = () => {
 
   useEffect(() => {
     // Fetch models from API endpoint
-    fetch('http://localhost:3004/users')
+    fetch('https://ai-models.onrender.com/users')
       .then(response => response.json())
       .then(data => setModels(data))
       .catch(error => console.error('Error fetching models:', error));
