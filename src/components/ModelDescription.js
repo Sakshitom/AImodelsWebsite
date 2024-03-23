@@ -6,7 +6,7 @@ const ModelDescriptionPage = () => {
   const [model, setModel] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3004/users/:id`)
+    fetch(`https://ai-models.onrender.com/users`)
       .then(response => response.json())
       .then(data => {
         if (data.length > 0) {
